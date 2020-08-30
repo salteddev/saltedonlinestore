@@ -52,6 +52,11 @@ select{
     display: flex;
     justify-content: space-between;
 }
+.link_none{
+    text-decoration: none;
+    color: #222222;
+    display: flex;
+}    
 .logo{
     display: flex;
     text-transform: uppercase;

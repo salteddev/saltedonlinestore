@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../libs/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="supheader">
+        <div class="supheader_wrapper">
+            <div class="wallet_wrapper">
+                <p>Currency:</p>
+                <select name="wallet" id="">
+                    <option value="dollar">dollar</option>
+                    <option value="euro" selected>euro</option>
+                    <option value="rub">russian ruble</option>
+                </select>
+            </div>
+            <div class="register_wrapper">
+                <a href="#">Register</a>
+                <a href="#">Sign In</a>
+                <div class="cart">
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="header_container">
+            <div class="logo">
+                <a class="link_none"
+                    href="file:///C:/Users/%D0%94%D0%B0%D0%BD%D0%B8%D0%BB/Desktop/online%20store/index.html">
+                    <span>avenue</span>
+                    <p>fashion</p>
+                </a>
+            </div>
+            <nav class="nav_bar">
+                <ul>
+                    <li class="list_item">
+                        <div class="nav_item"><a href="#">mens</a><i id="chevron" class="fas fa-chevron-down"></i>
+                            <div id="hover_div" class="category_hover">
+                                <div class="cols_wrapper">
+                                    <div id="margin4col" class="col">
+                                        <h3>casuals</h3>
+                                        <ul>
+                                            <li><a href="#">Jackets</a></li>
+                                            <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                            <li><a href="#">Polo Shirts</a></li>
+                                            <li><a href="#">Sportswear</a></li>
+                                            <li><a href="#">Trousers & Chinos</a></li>
+                                            <li><a href="#">T-Shirts</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <h3>formal</h3>
+                                        <ul>
+                                            <li><a href="">Jackets</a></li>
+                                            <li><a href="">Shirts</a></li>
+                                            <li><a href="">Suits</a></li>
+                                            <li><a href="">Trousers</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="sale_banner">
+                                    <p>autumn sale! <br>up to 50% off</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list_item">
+                        <div class="nav_item"><a href="#">womens</a><i id="chevron" class="fas fa-chevron-down"></i>
+                        </div>
+                    </li>
+                    <li class="list_item"><a href="file:///C:/Users/Данил/Desktop/online%20store/the%20brand/index.html">the brand</a></li>
+                    <li class="list_item">
+                        <div class="nav_item"><a href="file:///C:/Users/Данил/Desktop/online%20store/local%20store/index.html">local stores</a></div>
+                    </li>
+                    <li class="list_item">
+                        <div class="nav_item"><a href="file:///C:/Users/Данил/Desktop/online%20store/lookbook/index.html">look book</a><i id="chevron" class="fas fa-chevron-down"></i>
+                            <div id="lookbook_hover" class="category_hover">
+                                <div class="cols_wrapper">
+                                    <div id="margin4col" class="col">
+                                        <h3>our lookbooks</h3>
+                                        <ul>
+                                            <li><a href="#">Latest Post (mixed)</a></li>
+                                            <li><a href="#">Men's Lookbook</a></li>
+                                            <li><a href="#">Women's Lookbook</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <h3>your lookbook</h3>
+                                        <ul>
+                                            <li><a href="">View and Edit</a></li>
+                                            <li><a href="">Share</a></li>
+                                            <li><a href="">Delete</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="sale_banner">
+                                    <p>autumn sale! <br>up to 50% off</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="product_header">
+        <div class="header_wrapper">
+            <h2>product <span class="header_word">view</span></h2>
+            <p>mens - casuals- hoodies & sweatshirts - <span class="selected_product">ave classic sweatshirt</span></p>
+        </div>
+    </section>
+    <section class="main_product">
+        <div class="container">
+            <div class="main_part_wrapper">
+                <div class="img_wrapper">
+                    <div id="slider_wrapper" class="slider_wrapper">
+                        <img class="product_img" id="product_img_1" src="../img/products/product_view.png" alt="">
+                        <img class="product_img" id="product_img_2" src="../img/products/product_view.png" alt="">
+                        <img class="product_img" id="product_img_3" src="../img/products/product_view.png" alt="">
+                    </div>
+                    <div class="sliders_arrows">
+                        <div onclick="leftClick()" id="left_arrow" class="bg_arrow">
+                            <i class="fas fa-chevron-left"></i>
+                        </div>
+                        <div onclick="rightClick()" id="right_arrow" class="bg_arrow">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="info_about_prod_wrapper">
+                    <h2>ave classic sweatshirt</h2>
+                    <div class="links_wrapper">
+                        <div class="rating">
+                            <input type="radio" name="star" id="star1"><label for="star1"></label>
+                            <input type="radio" name="star" id="star2"><label for="star2"></label>
+                            <input type="radio" name="star" id="star3"><label for="star3"></label>
+                            <input type="radio" name="star" id="star4"><label for="star4"></label>
+                            <input type="radio" name="star" id="star5"><label for="star5"></label>
+                        </div>
+                        <a href="#">3 Review(s)</a>
+                        <a id="margins4link" href="#">Add a Review</a>
+                        <div class="social_media_wrapper">
+                            <p>Share:</p>
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="far fa-envelope"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="price"><span>$107</span>$89.99</p>
+                    <div class="info_prod">
+                        <p class="category_bold">availability:<span class="category_info">In stock</span></p>
+                        <p class="category_bold">product code:<span class="category_info">#499577</span></p>
+                        <p class="category_bold">tags:<span class="category_info"><a href="#">Classic,</a><a
+                                    href="#">Casual,</a><a href="#">V-neck,</a><a href="#">Loose</a> </span></p>
+                    </div>
+                    <p class="text_about_prod">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum aspernatur quibusdam facere quo
+                        ab, dicta, quasi iure odio alias enim mollitia veniam veritatis autem deleniti. Alias aperiam
+                        eum ducimus minus.
+                    </p>
+                    <ul class="list_prod">
+                        <li>Elasticated cuffs</li>
+                        <li>Casual fit</li>
+                        <li>100% Cotton</li>
+                        <li>Free shipping with 4 days delivery</li>
+                    </ul>
+                    <div class="selectors">
+                        <div class="left_selector">
+                            <h3>colour</h3>
+                            <select name="colour" id="">
+                                <option value="default" selected>Select Colour</option>
+                                <option value="">Green</option>
+                                <option value="">Red</option>
+                                <option value="">Black</option>
+                            </select>
+                        </div>
+                        <div class="center_selector">
+                            <h3>size</h3>
+                            <select name="size" id="">
+                                <option value="default" selected>Select Size</option>
+                                <option value="">XS</option>
+                                <option value="">S</option>
+                                <option value="">M</option>
+                                <option value="">L</option>
+                                <option value="">XL</option>
+                            </select>
+                        </div>
+                        <div class="right_selector">
+                            <h3>qty</h3>
+                            <select name="qty" id="min_selector">
+                                <option value="" selected>1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="btn_prod">
+                        <div class="btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p class="btn_text">add to cart</p>
+                        </div>
+                        <div class="btn">
+                            <i class="far fa-heart"></i>
+                            <p class="btn_text">add to lookbook</p>
+                        </div>
+                    </div>
+                    <div class="btn_compare">
+                        <div class="circle_compare"></div>
+                        <i id="compare" class="fas fa-compress-alt"></i>
+                        <p id="compare_text" class="btn_text">add to compare</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about_prod">
+                <div class="sup_about">
+                    <div class="wr">
+                        <h2>description</h2>
+                    </div>
+                    <div class="wr">
+                        <h2>video</h2>
+                    </div>
+                    <div class="wr">
+                        <h2>size & specs</h2>
+                    </div>
+                    <div class="wr">
+                        <h2>delivery & returns</h2>
+                    </div>
+                    <div class="wr">
+                        <h2>reviews</h2>
+                    </div>
+                </div>
+                <div class="text_prod">
+                    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto eveniet voluptate unde sequi eos,
+                        rerum nobis, amet repellendus aut ducimus dignissimos consequatur velit? Consequuntur odit,
+                        omnis illo nam ducimus ipsam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
+                        repellat excepturi officiis illum aliquid labore pariatur dolorum. Maxime, magni ipsum? Animi
+                        aliquam ipsum ea voluptatum ipsam voluptates ullam pariatur enim. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Hic, animi. Est accusantium cumque non cupiditate quaerat a
+                        officiis, porro iure asperiores qui odit magni maxime enim placeat quas sapiente soluta.</p>
+                    <br>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum fuga accusantium explicabo culpa
+                        unde debitis laudantium ratione et eaque corporis cupiditate nostrum dolores, fugiat consectetur
+                        reprehenderit? Exercitationem alias quam at! Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Omnis, corporis adipisci! Mollitia, eum. Fugiat reiciendis pariatur accusamus sit suscipit
+                        ipsum error nisi rerum perferendis, quos nihil cupiditate voluptatem! Consequatur, saepe? Lorem
+                        ipsum, dolor sit amet consectetur adipisicing elit. Iusto laboriosam, incidunt labore, enim
+                        nulla natus, magnam perferendis animi dolorem temporibus obcaecati aspernatur. Ea qui vitae
+                        ipsum dicta distinctio consequuntur ducimus. Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Cum distinctio non tenetur sed rem! Autem, optio? Eveniet, expedita dolorem excepturi
+                        ullam fuga tempora quibusdam reiciendis eaque rem asperiores minima. Repudiandae? Lorem, ipsum
+                        dolor sit amet consectetur adipisicing elit. Eum, dignissimos ex vitae quidem culpa omnis porro
+                        minus dicta, non maxime nulla, inventore quo illo. Impedit vel deleniti praesentium aperiam
+                        necessitatibus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus
+                        repellendus inventore voluptatum praesentium obcaecati? Obcaecati ducimus quam labore tenetur
+                        amet mollitia aliquam earum aut! Incidunt exercitationem similique corporis rem assumenda?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="footer_top">
+                <div class="col">
+                    <h3>information</h3>
+                    <ul>
+                        <li><a href="#">The brand</a></li>
+                        <li><a href="#">Local stores</a></li>
+                        <li><a href="#">Customer service</a></li>
+                        <li><a href="#">Privacy & cookies</a></li>
+                        <li><a href="#">Site map</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>why buyfrom us</h3>
+                    <ul>
+                        <li><a href="#">Shipping & returns</a></li>
+                        <li><a href="#">Secure shopping</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Award winning</a></li>
+                        <li><a href="#">Ethical trading</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>your account</h3>
+                    <ul>
+                        <li><a href="#">Sign in</a></li>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">View cart</a></li>
+                        <li><a href="#">View your lookbook</a></li>
+                        <li><a href="#">Track an order</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>lookbook</h3>
+                    <ul>
+                        <li><a href="#">Latest posts</a></li>
+                        <li><a href="#">Men's lookbook</a></li>
+                        <li><a href="#">Women's lookbook</a></li>
+                        <li><a href="#">View your lookbook</a></li>
+                        <li><a href="#">Delete your lookbook</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>contact details</h3>
+                    <ul>
+                        <li><a
+                                href="https://www.google.com/maps/place/180+Regent+St,+Soho,+London+W1B+5TJ,+%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B1%D1%80%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F/@51.5124696,-0.1420052,17z/data=!3m1!4b1!4m5!3m4!1s0x487604d5767c9015:0x1cf0ab0381c7fd45!8m2!3d51.5124696!4d-0.1398165">Head
+                                office: Avenue Fashion. <br>180-182 Regent Street, London</a></li>
+                        <li><a href="tel:0123-456-789">Telephone: 0123-456-789</a></li>
+                        <li><a href="mailto:support@yourwebsite.com">Email: support@yourwebsite.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <img src="../img/footer/award.png" alt="">
+                <div class="social_media">
+                    <div class="social_inner">
+                        <a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/?lang=ru"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.pinterest.com/"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../main.js"></script>
+</body>
+
+</html>
